@@ -9,7 +9,7 @@ for(var i = 0; i < keys.length; i++) {
 		var inputVal = input.innerHTML;
 		var btnVal = this.innerHTML;
 
-
+		//cancel result or equation
 		if(btnVal == 'C') {
 			input.innerHTML = '';
 			decimalAdded = false;
@@ -72,4 +72,10 @@ for(var i = 0; i < keys.length; i++) {
 		// prevent page jumps
 		e.preventDefault();
 	}
+}
+
+var styles =["css/style_home.css", "css/style_1.css", "css/style_2.css", "css/style_3.css", "css/style_4.css"];
+
+function changeStyle(s){
+	document.getElementById("style").setAttribute("href",styles[s]);
 }
