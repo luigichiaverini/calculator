@@ -4,109 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title></title>
-    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-
-    <style >
-
-    body{
-      font-family: 'Orbitron', sans-serif;
-      font-size: 50px;
-      text-align: center;
-      background-color: rgb(56, 60, 57);
-    }
-
-    .tasto{
-      border-color: #30cb29;
-      border: solid 3px;
-      height: 100px;
-      color: #30cb29;
-      background-color: black;
-    }
-    .scocca{
-      margin-top: 5%;
-    }
-    .screen{
-      color: #30cb29;
-      height: 100px;
-      background-color: rgb(56, 60, 57);
-      border: solid 3px;
-      border-color: #30cb29;
-    }
-
-    .tasto:hover{
-      background-color: #30cb29;
-      color: black;
-    }
-
-    .tasto:active{
-      background-color: #30cb29;
-      border: 0;
-
-    }
-
-    .clear{
-      background-color: #d12b2b;
-    }
-    .clear:hover{
-      background-color: #f51010;
-    }
-
-    .operator{
-      background-color: #30cb29;
-      color: black;
-    }
-    .operator:hover{
-        background-color: black;
-        color: #30cb29;
-    }
-
-    .eval{
-      background-color: #30cb29;
-      color: black;
-    }
-    .eval:hover{
-      background-color: black;
-      color: #30cb29;
-    }
-
-    .btn-group{
-      margin-top: 10%;
-
-    }
-  .dropdown-toggle{
-    color: #30cb29;
-    background-color: black;
-    border-color: #30cb29;
-    border-radius: 0;
-  }
-
-    .dropdown-toggle:hover{
-      color: black;
-      background-color: #30cb29;
-      border-color: black;
-    }
-
-    .dropdown-toggle:active{
-      color: black;
-      background-color: #30cb29;
-      border-color: black;
-    }
-
-  .navbar{
-    background-color: black;
-    border-color: #30cb29;
-    border-radius: 0;
-  }
-
-  .dropdown-menu{
-    color: black;
-    background-color: #30cb29;
-    border-color: black;
-  }
-
-    </style>
+    <link id="style" rel="stylesheet" type="text/css" href="css/style_home.css">
   </head>
   <body>
 
@@ -119,11 +18,11 @@
               Stili <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-              <li><a href="calcolatrice.html">Stile 1</a></li>
-              <li><a href="calcolatrice_1.html">Stile 2</a></li>
-              <li><a href="calcolatrice_2.html">Stile 3</a></li>
-              <li><a href="calcolatrice_3.html">Stile 4</a></li>
-              <li><a href="calcolatrice_4.html">Stile 5</a></li>
+              <li><a onclick="changeStyle(0)">Stile 1</a></li>
+              <li><a onclick="changeStyle(1)">Stile 2</a></li>
+              <li><a onclick="changeStyle(2)">Stile 3</a></li>
+              <li><a onclick="changeStyle(3)">Stile 4</a></li>
+              <li><a onclick="changeStyle(4)">Stile 5</a></li>
             </ul>
           </div>
 
@@ -174,10 +73,13 @@
 </div>
 </div>
 
-    <!-- PrefixFree -->
-    <script src="calcolatrice.js"></script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+
+        <!-- PrefixFree -->
+    <script src="js/calcolatrice.js"></script>
   </body>
 </html>

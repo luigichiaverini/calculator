@@ -1,0 +1,57 @@
+body{
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .tasto{
+      border-color: black;
+      border: solid 3px;
+      height: 100px;
+    }
+    .scocca{
+      margin-top: 5%;
+    }
+    .screen{
+      color: white;
+      height: 100px;
+      background-color: rgb(56, 60, 57);
+      border: solid 3px;
+      border-color: black;
+    }
+
+    .tasto:hover{
+      background-color: #f89f49;
+    }
+
+    .tasto:active{
+      background-color: #f88749;
+      border: 0;
+
+    }
+
+    .clear{
+      background-color: #de4d4d;
+    }
+    .clear:hover{
+      background-color: #d12b2b;
+    }
+
+    .operator{
+      background-color: lightblue;
+    }
+    .operator:hover{
+        background-color: #2ab9dd;
+    }
+
+    .eval{
+      background-color: lightgreen;
+    }
+    .eval:hover{
+      background-color: rgb(47, 132, 59);
+    }
+
+    .btn-group{
+      margin-top: 10%;
+    }
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
